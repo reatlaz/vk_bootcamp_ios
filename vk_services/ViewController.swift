@@ -11,7 +11,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Серивисы VK"
         // Do any additional setup after loading the view.
     }
     var categories = AppCategory.allApps
