@@ -13,6 +13,7 @@
 		94ECE1C728812F6E00641E33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94ECE1C528812F6E00641E33 /* Main.storyboard */; };
 		94ECE1C928812F7300641E33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94ECE1C828812F7300641E33 /* Assets.xcassets */; };
 		94ECE1CC28812F7300641E33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94ECE1CA28812F7300641E33 /* LaunchScreen.storyboard */; };
+		94ECE1FA2881648100641E33 /* VKApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94ECE1F92881648100641E33 /* VKApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		94ECE1C828812F7300641E33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94ECE1CB28812F7300641E33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94ECE1CD28812F7300641E33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94ECE1F92881648100641E33 /* VKApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				94ECE1C828812F7300641E33 /* Assets.xcassets */,
 				94ECE1CA28812F7300641E33 /* LaunchScreen.storyboard */,
 				94ECE1CD28812F7300641E33 /* Info.plist */,
+				94ECE1F92881648100641E33 /* VKApp.swift */,
 			);
 			path = vk_services;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94ECE1FA2881648100641E33 /* VKApp.swift in Sources */,
 				94ECE1C428812F6E00641E33 /* ViewController.swift in Sources */,
 				94ECE1C028812F6E00641E33 /* AppDelegate.swift in Sources */,
 				94ECE1C228812F6E00641E33 /* SceneDelegate.swift in Sources */,
