@@ -52,9 +52,23 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let app = categories[indexPath.section].apps[indexPath.row]
-        guard let url = URL(string: app.link) else {return}
-        UIApplication.shared.open(url)
-        //открытие просто по ссылке (Universal URL) для самоката не работает
+        //вариант с universal URLs (не все установленные приложения открываются)
+        /*guard let url = URL(string: app.link) else {return}
+        UIApplication.shared.open(url) */
+        
+        //вариант с URL schemes
+        guard let appURL = URL(string: app.appURL) else {return}
+        
+        if UIApplication.shared.canOpenURL(appURL){
+            //deep link
+            UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
+        } else {
+            //website link
+            let url = URL(string: app.link)!
+            UIApplication.shared.open(url)
+        }
+        
+        
     }
     
 }
